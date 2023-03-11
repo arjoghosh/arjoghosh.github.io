@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/arjoghosh.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/arjoghosh.github.io/static/js/main.94fa3ccc.js",
+    "static/js/496.cae0a888.chunk.js": "/arjoghosh.github.io/static/js/496.cae0a888.chunk.js",
+    "static/media/logo.svg": "/arjoghosh.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/arjoghosh.github.io/index.html",
+    "main.073c9b0a.css.map": "/arjoghosh.github.io/static/css/main.073c9b0a.css.map",
+    "main.94fa3ccc.js.map": "/arjoghosh.github.io/static/js/main.94fa3ccc.js.map",
+    "496.cae0a888.chunk.js.map": "/arjoghosh.github.io/static/js/496.cae0a888.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.94fa3ccc.js"
+  ]
+}
