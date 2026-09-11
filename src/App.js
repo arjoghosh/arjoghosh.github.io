@@ -22,9 +22,9 @@ import {
   Calendar24Regular,
   Code24Regular,
   DesignIdeas24Regular,
-  Github24Regular,
+  // Github24Regular,
   Globe24Regular,
-  LinkedIn24Regular,
+  // LinkedIn24Regular,
   Location24Regular,
   Mail24Regular,
   Navigation24Regular,
@@ -772,17 +772,17 @@ function App() {
                     Send me an email
                   </Button>
 
-                  <Button
-                    appearance="secondary"
-                    size="large"
-                    icon={<LinkedIn24Regular />}
-                    as="a"
-                    href={profile.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Connect on LinkedIn
-                  </Button>
+                  // <Button
+                  //   appearance="secondary"
+                  //   size="large"
+                  //   icon={<LinkedIn24Regular />}
+                  //   as="a"
+                  //   href={profile.linkedin}
+                  //   target="_blank"
+                  //   rel="noreferrer"
+                  // >
+                  //   Connect on LinkedIn
+                  // </Button>
                 </div>
               </div>
             </div>
@@ -801,29 +801,29 @@ function App() {
           </div>
 
           <div className="footer-links">
-            <Tooltip content="GitHub" relationship="label">
-              <Button
-                appearance="subtle"
-                icon={<Github24Regular />}
-                as="a"
-                href={profile.github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub profile"
-              />
-            </Tooltip>
+            // <Tooltip content="GitHub" relationship="label">
+            //   <Button
+            //     appearance="subtle"
+            //     icon={<Github24Regular />}
+            //     as="a"
+            //     href={profile.github}
+            //     target="_blank"
+            //     rel="noreferrer"
+            //     aria-label="GitHub profile"
+            //   />
+            // </Tooltip>
 
-            <Tooltip content="LinkedIn" relationship="label">
-              <Button
-                appearance="subtle"
-                icon={<LinkedIn24Regular />}
-                as="a"
-                href={profile.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn profile"
-              />
-            </Tooltip>
+            // <Tooltip content="LinkedIn" relationship="label">
+            //   <Button
+            //     appearance="subtle"
+            //     icon={<LinkedIn24Regular />}
+            //     as="a"
+            //     href={profile.linkedin}
+            //     target="_blank"
+            //     rel="noreferrer"
+            //     aria-label="LinkedIn profile"
+            //   />
+            // </Tooltip>
 
             <Tooltip content="Email" relationship="label">
               <Button
