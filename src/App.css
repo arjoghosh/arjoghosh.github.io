@@ -14,6 +14,7 @@
   --brand-background: #eeecff;
   --accent: #0f6cbd;
   --max-width: 1180px;
+    color-scheme: light;
 }
 
 :root[data-theme="dark"] {
@@ -28,6 +29,7 @@
     0 24px 70px rgba(0, 0, 0, 0.3),
     0 3px 14px rgba(0, 0, 0, 0.2);
   --brand-background: rgba(91, 79, 216, 0.18);
+  color-scheme: dark;
 }
 
 * {
@@ -60,9 +62,6 @@ a {
       transparent 26rem
     ),
     var(--page-background);
-  transition:
-    color 180ms ease,
-    background 180ms ease;
 }
 
 .site-shell {

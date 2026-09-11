@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import {
   Avatar,
   Badge,
@@ -157,9 +157,16 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedSection, setSelectedSection] = useState("work");
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.dataset.theme = darkMode ? "dark" : "light";
-    localStorage.setItem("portfolio-theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("portfolio-theme", darkMode ? "dark" : "light");
+    } catch {
+      // Theme switching still works if browser storage is unavailable.
+    }
   }, [darkMode]);
 
   useEffect(() => {
@@ -247,25 +254,20 @@ function App() {
             </nav>
 
             <div className="header-actions">
-              <Tooltip
-                content={darkMode ? "Use light theme" : "Use dark theme"}
-                relationship="label"
-              >
-                <Switch
-                  checked={darkMode}
-                  onChange={(_, data) => setDarkMode(data.checked)}
-                  aria-label={
-                    darkMode ? "Switch to light mode" : "Switch to dark mode"
-                  }
-                  indicator={
-                    darkMode ? (
-                      <WeatherMoon24Regular />
-                    ) : (
-                      <WeatherSunny24Regular />
-                    )
-                  }
-                />
-              </Tooltip>
+            <span title={darkMode ? "Use light theme" : "Use dark theme"}>
+              <Switch
+                checked={darkMode}
+                onChange={(_, data) => setDarkMode(data.checked)}
+                aria-label="Dark mode"
+                indicator={
+                  darkMode ? (
+                    <WeatherMoon24Regular />
+                  ) : (
+                    <WeatherSunny24Regular />
+                  )
+                }
+              />
+            </span>
 
               <Button
                 className="desktop-contact-button"
